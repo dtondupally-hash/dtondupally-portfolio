@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef3f8;
+    color: #1c1c1c;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: min(1120px, calc(100% - 32px));
+    margin: 0 auto;
+}
+
+.topbar {
+    background: #111827;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #f3f4f6;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #60a5fa;
+}
+
+.theme-btn {
+    border: 1px solid rgba(255,255,255,0.4);
+    background: transparent;
+    color: #fff;
+    border-radius: 8px;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+}
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 80px 0;
+}
+
+.hero-content {
+    flex: 1.3;
+}
+
+.hero h1 {
+    font-size: clamp(2.8rem, 4vw, 5rem);
+    font-weight: 800;
+    color: #111827;
+    line-height: 1.1;
+    margin-bottom: 18px;
+}
+
+.hero h1 span {
+    color: #2563eb;
+}
+
+.hero h2 {
+    font-size: clamp(1.5rem, 2vw, 2.4rem);
+    color: #374151;
+    margin-bottom: 18px;
+    font-weight: 500;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 650px;
+    color: #4b5563;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 28px;
+    flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary,
+.submit-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary,
+.submit-btn {
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 2px solid #2563eb;
+    color: #2563eb;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover,
+.submit-btn:hover {
+    transform: translateY(-2px);
+}
+
+.hero-image-wrap {
+    flex: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-photo {
+    width: min(380px, 90%);
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #2563eb;
+    box-shadow: 0 20px 40px rgba(37, 99, 235, 0.18);
+}
+
+section {
+    padding: 70px 0;
+}
+
+section h3 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #111827;
+    font-weight: 700;
+}
+
+.about p,
+.cert-grid p,
+.project-card p,
+.contact-info p {
+    color: #4b5563;
+    font-size: 1.05rem;
+}
+
+.education-table {
+    display: grid;
+    gap: 18px;
+}
+
+.edu-row {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr 0.8fr 1.4fr 0.7fr 1fr;
+    align-items: center;
+    gap: 16px;
+    padding: 18px 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 10px 20px rgba(17, 24, 39, 0.04);
+}
+
+.edu-label {
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.edu-value {
+    color: #374151;
+}
+
+.skills-grid,
+.project-grid,
+.cert-grid {
+    display: grid;
+    gap: 22px;
+}
+
+.skills-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.project-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.cert-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.skill-box,
+.project-card,
+.cert-grid > div {
+    background: #fff;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 12px 24px rgba(15, 23, 42, 0.05);
+    border: 1px solid #eef2f7;
+}
+
+.skill-box h4,
+.project-card h4,
+.cert-grid h4,
+.contact-info h4 {
+    color: #111827;
+    margin-bottom: 14px;
+    font-size: 1.35rem;
+}
+
+.skill-box ul,
+.project-card ul {
+    padding-left: 18px;
+    color: #374151;
+}
+
+.skill-box li {
+    margin: 6px 0;
+}
+
+.project-card span {
+    display: inline-block;
+    margin-top: 18px;
+    background: #dbeafe;
+    color: #1d4ed8;
+    border-radius: 999px;
+    padding: 6px 12px;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 30px;
+    background: #fff;
+    padding: 28px;
+    border-radius: 18px;
+    box-shadow: 0 18px 30px rgba(17, 24, 39, 0.04);
+    border: 1px solid #e5e7eb;
+}
+
+.contact-info {
+    padding: 10px 0;
+}
+
+.contact-form {
+    display: grid;
+    gap: 18px;
+}
+
+.form-group {
+    display: grid;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    padding: 12px 14px;
+    font: inherit;
+    background: #f9fafb;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: 2px solid rgba(37, 99, 235, 0.2);
+    border-color: #60a5fa;
+}
+
+@media (max-width: 900px) {
+    .hero,
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        display: grid;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        padding-top: 50px;
+    }
+
+    .skills-grid,
+    .project-grid,
+    .cert-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 16px 0;
+        gap: 12px;
+    }
+
+    .logo {
+        font-size: 1.6rem;
+    }
+
+    .nav-links {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 40px 0 30px;
+    }
+
+    .hero h1 {
+        font-size: 2.6rem;
+    }
+
+    .hero h2 {
+        font-size: 1.4rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .edu-row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .edu-label {
+        font-size: 0.82rem;
+    }
+
+    .edu-value {
+        font-size: 0.92rem;
+    }
+
+    .contact-wrapper {
+        padding: 18px;
+    }
+}

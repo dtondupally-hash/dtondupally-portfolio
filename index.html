@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="topbar">
+        <nav class="navbar container">
+            <div class="logo">My Portfolio</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="theme-btn" aria-label="Theme toggle">☾</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero container" id="home">
+            <div class="hero-content">
+                <h1>Hello, I'm <span>Tondupally Deepthi</span></h1>
+                <h2>Computer Science Engineering Student</h2>
+                <p>I am a passionate CSE student interested in programming, web development and learning new technologies.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-primary">View My Projects</a>
+                    <a href="#contact" class="btn-secondary">Contact Me</a>
+                </div>
+            </div>
+
+            <div class="hero-image-wrap">
+                <img src="profile.jpeg" alt="My Profile Photo" class="profile-photo">
+            </div>
+        </section>
+
+        <section class="about container" id="about">
+            <h3>About Me</h3>
+            <p>I am a Computer Science Engineering student who enjoys learning programming and developing useful applications. I am interested in web development, software development and emerging technologies.</p>
+            <p>My goal is to improve my technical skills and work on real-world projects that solve practical problems.</p>
+        </section>
+
+        <section class="education container" id="education">
+            <h3>Education</h3>
+            <div class="education-table">
+                <div class="edu-row">
+                    <span class="edu-label">Qualification</span>
+                    <span class="edu-value">B.E / B.Tech - CSE</span>
+                    <span class="edu-label">Institution</span>
+                    <span class="edu-value">Stanley College of Engineering and Technology for Women, Hyderabad</span>
+                    <span class="edu-label">Year</span>
+                    <span class="edu-value">2025 - Present</span>
+                </div>
+                <div class="edu-row">
+                    <span class="edu-label">Qualification</span>
+                    <span class="edu-value">Intermediate</span>
+                    <span class="edu-label">Institution</span>
+                    <span class="edu-value">Narayana Junior College</span>
+                    <span class="edu-label">Year</span>
+                    <span class="edu-value">2023 - 2025</span>
+                </div>
+                <div class="edu-row">
+                    <span class="edu-label">Qualification</span>
+                    <span class="edu-value">SSC</span>
+                    <span class="edu-label">Institution</span>
+                    <span class="edu-value">Brilliant Grammar High School</span>
+                    <span class="edu-label">Year</span>
+                    <span class="edu-value">2023</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills container" id="skills">
+            <h3>My Skills</h3>
+            <div class="skills-grid">
+                <div class="skill-box">
+                    <h4>Programming</h4>
+                    <ul>
+                        <li>C</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
+
+                <div class="skill-box">
+                    <h4>Web Development</h4>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+
+                <div class="skill-box">
+                    <h4>Tools</h4>
+                    <ul>
+                        <li>VS Code</li>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects container" id="projects">
+            <h3>My Projects</h3>
+            <div class="project-grid">
+                <article class="project-card">
+                    <h4>Personal Portfolio</h4>
+                    <p>A responsive personal portfolio website created using HTML, CSS, Bootstrap and JavaScript.</p>
+                    <span>Web</span>
+                </article>
+
+                <article class="project-card">
+                    <h4>Student Grade Calculator</h4>
+                    <p>A Python program that calculates student marks, total and grade.</p>
+                    <span>Python</span>
+                </article>
+
+                <article class="project-card">
+                    <h4>Expense Tracker</h4>
+                    <p>A simple web application for recording and managing daily expenses.</p>
+                    <span>Web</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="certifications container">
+            <h3>Certifications &amp; Achievements</h3>
+            <div class="cert-grid">
+                <div>
+                    <h4>Certification 1</h4>
+                    <p>Add your certification name here.</p>
+                </div>
+                <div>
+                    <h4>Achievement 1</h4>
+                    <p>Add your achievement here.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact container" id="contact">
+            <h3>Contact Me</h3>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h4>Get In Touch</h4>
+                    <p>📧 dtondupally@gmail.com</p>
+                    <p>📍 Shadnagar, Telangana, India</p>
+                    <p>💻 GitHub: github.com/tdondupally-hash</p>
+                    <p>🔗 LinkedIn: linkedin.com/in/deepthi-thondupally-20301363</p>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Your Message"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
